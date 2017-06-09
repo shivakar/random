@@ -14,4 +14,4 @@ install:
   - go get github.com/stretchr/testify
 
 script:
-  - $HOME/gopath/bin/goveralls -service=travis-ci ./prng/...
+  - $HOME/gopath/bin/goveralls -service=travis-ci
