@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shivakar/random.svg?branch=master)](https://travis-ci.org/shivakar/random)
+
 # random
 Package random implements pseudo-random number generators and random variate generators.
 
