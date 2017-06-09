@@ -6,3 +6,4 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Pseudo-RNG Engine interface
 - Mersenne Twister MT19937 64-bit implementation and tests
+- Added Travis CI integration

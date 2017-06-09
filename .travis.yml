@@ -1,0 +1,17 @@
+language: go
+
+go:
+  - 1.7.0
+  - 1.8.0
+  - tip
+
+before_install:
+  - go get github.com/axw/gocov/gocov
+  - go get github.com/mattn/goveralls
+  - go get github.com/golang/tools/cmd/cover
+
+install:
+  - go get github.com/stretchr/testify
+
+script:
+  - $HOME/gopath/bin/goveralls -service=travis-ci ./prng/...
