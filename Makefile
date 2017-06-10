@@ -1,4 +1,4 @@
-PRNGS := mt19937 splitmix64 xorshift128plus xorshift1024star
+PRNGS := mt19937 splitmix64 xorshift128plus xorshift1024star xoroshiro128plus
 PRNGS_LONG := $(addsuffix -long, $(PRNGS))
 PRNGS_COVERAGE := $(addsuffix -coverage, $(PRNGS))
 

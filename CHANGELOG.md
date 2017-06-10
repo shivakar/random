@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 - SplitMix64 implementation and tests
 - Xorshift128+ implementation and tests
 - Xorshift1024* implementation and tests
+- Xoroshiro128+ implementation and tests
 
 ### Changed
 - Fixed Makefile for multiple targets

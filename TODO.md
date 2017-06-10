@@ -2,10 +2,10 @@
 
 ## Version 1.0 goals
 
-- [ ] Engines
+- [x] Engines
     - [x] MT19937
     - [x] SplitMix64
-    - [ ] Xoroshiro128Plus
+    - [x] Xoroshiro128Plus
     - [x] Xorshift1024Star
     - [x] Xorshift128Plus
 - [ ] Distributions

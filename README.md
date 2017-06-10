@@ -25,6 +25,9 @@ PRNG Engines available:
 * Xorshift1024Star: Fast generator with maximal period of 2^1024 - 1
     * See http://xorshift.di.unimi.it/xorshift1024star.c for details
       and reference implementation
+* Xoroshiro128Plus: The successor to xorshift128+
+    * See http://xoroshiro.di.unimi.it/xoroshiro128plus.c for details
+      and reference implementation
 
 ## License
 
