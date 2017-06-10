@@ -6,7 +6,7 @@
     - [x] MT19937
     - [x] SplitMix64
     - [ ] Xoroshiro128Plus
-    - [ ] Xorshift1024Star
+    - [x] Xorshift1024Star
     - [x] Xorshift128Plus
 - [ ] Distributions
     - [ ] uniform int distribution
