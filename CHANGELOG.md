@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [0.2.0] - 2017-06-10
 ### Added
 - SplitMix64 implementation and tests
+- Xorshift128+ implementation and tests
 
 ### Changed
 - Fixed Makefile for multiple targets

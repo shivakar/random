@@ -16,6 +16,12 @@ PRNG Engines available:
 * Mersenne Twister: mt19937 64-bit
     * See http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt64.html for
       details and reference implementation
+* SplitMix64: Pseduo RNG based on avalanching function
+    * See http://prng.di.unimi.it/splitmix64.c for details
+      and reference implementation
+* Xorshift128Plus: Fast generator passing BigCrush
+    * See http://xorshift.di.unimi.it/xorshift128plus.c for details
+      and reference implementation
 
 ## License
 
