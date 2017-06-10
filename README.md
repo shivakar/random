@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/shivakar/random.svg?branch=master)](https://travis-ci.org/shivakar/random)[![Coverage Status](https://coveralls.io/repos/github/shivakar/random/badge.svg?branch=master)](https://coveralls.io/github/shivakar/random?branch=master)[![GoDoc](https://godoc.org/github.com/shivakar/random?status.svg)](https://godoc.org/github.com/shivakar/random)
+[![Build Status](https://travis-ci.org/shivakar/random.svg?branch=master)](https://travis-ci.org/shivakar/random) [![Coverage Status](https://coveralls.io/repos/github/shivakar/random/badge.svg?branch=master)](https://coveralls.io/github/shivakar/random?branch=master) [![GoDoc](https://godoc.org/github.com/shivakar/random?status.svg)](https://godoc.org/github.com/shivakar/random)
 
 # random
 Package random implements pseudo-random number generators and random variate generators.
