@@ -9,22 +9,22 @@
     - [x] Xorshift1024Star
     - [x] Xorshift128Plus
 - [ ] Distributions
-    - [ ] uniform int distribution
-    - [ ] uniform real distribution
     - [ ] Bernoulli
     - [ ] Binomial
-    - [ ] Geometric
-    - [ ] Negative Binomial
-    - [ ] Poisson
-    - [ ] Exponential
-    - [ ] Gamma
-    - [ ] Weibull
-    - [ ] Extreme value
-    - [ ] Normal
-    - [ ] Fisher F
     - [ ] Cauchy
-    - [ ] LogNormal
     - [ ] Chi Squared
-    - [ ] Student T
+    - [ ] Exponential
+    - [ ] Extreme value
+    - [ ] Fisher F
+    - [ ] Gamma
+    - [ ] Geometric
+    - [ ] LogNormal
     - [ ] Logistic
+    - [ ] Negative Binomial
+    - [ ] Normal
     - [ ] Pareto
+    - [ ] Poisson
+    - [ ] Student T
+    - [ ] Weibull
+    - [ ] uniform int distribution
+    - [x] uniform real distribution

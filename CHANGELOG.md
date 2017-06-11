@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2017-06-11
+### Added
+- Distribution interface
+- Distribution Goodness-of-Fit tests, namely KS test and AD test
+- Uniform random variable and variate generator
+
 ## [0.2.0] - 2017-06-10
 ### Added
 - SplitMix64 implementation and tests

@@ -29,6 +29,12 @@ PRNG Engines available:
     * See http://xoroshiro.di.unimi.it/xoroshiro128plus.c for details
       and reference implementation
 
+Random variables and variate generators are available for the following
+distributions:
+
+* Continuous Uniform distribution:
+    * See https://en.wikipedia.org/wiki/Uniform_distribution_%28continuous%29 for details
+
 ## License
 
 Random is licensed under a MIT license.

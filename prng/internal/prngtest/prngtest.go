@@ -1,4 +1,4 @@
-// Package prngtest defined utilities for testing PRNG Engines
+// Package prngtest defines utilities for testing PRNG Engines
 package prngtest
 
 import (
