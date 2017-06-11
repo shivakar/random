@@ -34,6 +34,8 @@ distributions:
 
 * Continuous Uniform distribution:
     * See https://en.wikipedia.org/wiki/Uniform_distribution_%28continuous%29 for details
+* Normal distribution:
+    * See https://en.wikipedia.org/wiki/Normal_distribution for details
 
 ## License
 

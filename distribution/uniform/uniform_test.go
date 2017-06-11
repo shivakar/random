@@ -3,6 +3,7 @@ package uniform_test
 import (
 	"fmt"
 	"math/rand"
+	"strings"
 	"testing"
 	"time"
 
@@ -18,7 +19,6 @@ import (
 )
 
 func Test_Uniform_GetParams(t *testing.T) {
-	t.Parallel()
 	assert := assert.New(t)
 	data := [...]struct {
 		a float64
@@ -39,7 +39,6 @@ func Test_Uniform_GetParams(t *testing.T) {
 }
 
 func Test_Uniform_CDF(t *testing.T) {
-	t.Parallel()
 	assert := assert.New(t)
 	data := [...]struct {
 		a float64
@@ -98,7 +97,6 @@ func Test_Uniform_CDF(t *testing.T) {
 }
 
 func Test_Uniform_PDF(t *testing.T) {
-	t.Parallel()
 	assert := assert.New(t)
 	data := [...]struct {
 		a float64
@@ -149,7 +147,6 @@ func Test_Uniform_PDF(t *testing.T) {
 }
 
 func Test_Uniform_Float64(t *testing.T) {
-	t.Parallel()
 	assert := assert.New(t)
 	engines := [...]struct {
 		r    prng.Engine
@@ -213,4 +210,46 @@ func Benchmark_Uniform_Xorshift1024Star_Float64(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_ = d.Float64()
 	}
+}
+
+// Example - Uniform Distribution
+func ExampleUniformDistribution() {
+	// Example based on
+	// http://www.cplusplus.com/reference/random/normal_distribution/
+	r := xorshift128plus.New(20170611)
+	d := uniform.New(r, 3.0, 7.0)
+
+	var p [10]int
+
+	nrolls := 10000
+	nstars := 100
+	for i := 0; i < nrolls; i++ {
+		n := d.Float64()
+		if n >= 0.0 && n < 10.0 {
+			p[int(n)]++
+		}
+	}
+
+	fmt.Println("Uniform Distribution: a=3.0, sigma=7.0")
+
+	for i := 0; i < 10; i++ {
+		v := p[i] * nstars / nrolls
+
+		fmt.Printf("%2d-%2d: %s (%d)\n", i, i+1,
+			strings.Repeat("*", v), v)
+	}
+
+	// Output:
+	// Uniform Distribution: a=3.0, sigma=7.0
+	//  0- 1:  (0)
+	//  1- 2:  (0)
+	//  2- 3:  (0)
+	//  3- 4: ************************ (24)
+	//  4- 5: ************************* (25)
+	//  5- 6: ************************* (25)
+	//  6- 7: ************************ (24)
+	//  7- 8:  (0)
+	//  8- 9:  (0)
+	//  9-10:  (0)
+
 }

@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 - Distribution interface
 - Distribution Goodness-of-Fit tests, namely KS test and AD test
 - Uniform random variable and variate generator
+- Normal random variable and variate generator
 
 ## [0.2.0] - 2017-06-10
 ### Added

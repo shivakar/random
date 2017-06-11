@@ -2,7 +2,7 @@ PRNGS := mt19937 splitmix64 xorshift128plus xorshift1024star xoroshiro128plus
 PRNGS_LONG := $(addsuffix -long, $(PRNGS))
 PRNGS_COVERAGE := $(addsuffix -coverage, $(PRNGS))
 
-DISTRIBUTIONS := uniform
+DISTRIBUTIONS := uniform normal
 DISTRIBUTIONS_COVERAGE := $(addsuffix -coverage, $(DISTRIBUTIONS))
 
 default: test

@@ -21,7 +21,7 @@
     - [ ] LogNormal
     - [ ] Logistic
     - [ ] Negative Binomial
-    - [ ] Normal
+    - [x] Normal
     - [ ] Pareto
     - [ ] Poisson
     - [ ] Student T
