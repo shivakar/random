@@ -11,7 +11,7 @@
 - [ ] Distributions
     - [ ] Bernoulli
     - [ ] Binomial
-    - [ ] Cauchy
+    - [x] Cauchy
     - [ ] Chi Squared
     - [ ] Exponential
     - [ ] Extreme value

@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Uniform random variable and variate generator
 - Normal random variable and variate generator
 - LogNormal random variable and variate generator
+- Cauchy random variable and variate generator
 
 ### Changed
 - Fixed typos

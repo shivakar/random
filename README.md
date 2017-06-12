@@ -38,6 +38,8 @@ distributions:
     * See https://en.wikipedia.org/wiki/Normal_distribution for details
 * LogNormal distribution:
     * See https://en.wikipedia.org/wiki/Log-normal_distribution for details
+* Cauchy distribution:
+    * See https://en.wikipedia.org/wiki/Cauchy_distribution for details
 
 ## License
 
