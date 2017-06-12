@@ -2,6 +2,7 @@ package cauchy_test
 
 import (
 	"fmt"
+	"math"
 	"math/rand"
 	"strings"
 	"testing"
@@ -151,45 +152,45 @@ func Test_Cauchy_Float64(t *testing.T) {
 }
 
 // Benchmarks
-func Benchmark_BuiltInPRNG_NormFloat64(b *testing.B) {
+func Benchmark_BuiltInPRNG_CauchyFloat64(b *testing.B) {
 	d := rand.New(rand.NewSource(time.Now().UnixNano()))
 	x := 0.0
 	y := 1.0
 	for i := 0; i < b.N; i++ {
-		_ = x + (y-x)*d.NormFloat64()
+		_ = x + y*math.Tan(math.Pi*(d.Float64()-0.5))
 	}
 }
 
 func Benchmark_Cauchy_MT19937_Float64(b *testing.B) {
-	d := normal.New(mt19937.New(0), 0.0, 1.0)
+	d := cauchy.New(mt19937.New(0), 0.0, 1.0)
 	for i := 0; i < b.N; i++ {
 		_ = d.Float64()
 	}
 }
 
 func Benchmark_Cauchy_SplitMix64_Float64(b *testing.B) {
-	d := normal.New(splitmix64.New(0), 0.0, 1.0)
+	d := cauchy.New(splitmix64.New(0), 0.0, 1.0)
 	for i := 0; i < b.N; i++ {
 		_ = d.Float64()
 	}
 }
 
 func Benchmark_Cauchy_Xoroshiro128Plus_Float64(b *testing.B) {
-	d := normal.New(xoroshiro128plus.New(0), 0.0, 1.0)
+	d := cauchy.New(xoroshiro128plus.New(0), 0.0, 1.0)
 	for i := 0; i < b.N; i++ {
 		_ = d.Float64()
 	}
 }
 
 func Benchmark_Cauchy_Xorshift128Plus_Float64(b *testing.B) {
-	d := normal.New(xorshift128plus.New(0), 0.0, 1.0)
+	d := cauchy.New(xorshift128plus.New(0), 0.0, 1.0)
 	for i := 0; i < b.N; i++ {
 		_ = d.Float64()
 	}
 }
 
 func Benchmark_Cauchy_Xorshift1024Star_Float64(b *testing.B) {
-	d := normal.New(xorshift1024star.New(0), 0.0, 1.0)
+	d := cauchy.New(xorshift1024star.New(0), 0.0, 1.0)
 	for i := 0; i < b.N; i++ {
 		_ = d.Float64()
 	}
