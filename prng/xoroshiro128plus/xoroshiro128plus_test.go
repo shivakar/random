@@ -3,6 +3,7 @@ package xoroshiro128plus_test
 import (
 	"bytes"
 	"encoding/binary"
+	"fmt"
 	"os"
 	"path/filepath"
 	"testing"
@@ -139,4 +140,48 @@ func Benchmark_xoroshiro128Plus_Float64OO(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_ = rng.Float64()
 	}
+}
+
+// Example - Xoroshiro128+ Usage
+func ExampleXoroshiro128plus() {
+	// Create a new instance of Xoroshiro128+ engine
+	r := xoroshiro128plus.New(20170612)
+
+	fmt.Println("Xoroshiro128+: seed = 20170612; Uint64()")
+	for i := 0; i < 10; i++ {
+		// Draw 64 random bits as a uint64
+		fmt.Println(r.Uint64())
+	}
+
+	// Reset the generator
+	r.Reset()
+	fmt.Println("Xoroshiro128+: seed = 20170612; Float64()")
+	for i := 0; i < 10; i++ {
+		// Draw 64 random bits as a float64
+		fmt.Println(r.Float64())
+	}
+
+	// Output:
+	// Xoroshiro128+: seed = 20170612; Uint64()
+	// 13364946148592648574
+	// 15127709656518321606
+	// 17094878298000491099
+	// 8348700304248895100
+	// 14170158091378427254
+	// 5072389037599580702
+	// 14565530355298052676
+	// 15099982216008482787
+	// 4963013919450360163
+	// 5170077469078173405
+	// Xoroshiro128+: seed = 20170612; Float64()
+	// 0.7245151824727962
+	// 0.8200747837163553
+	// 0.9267152094533717
+	// 0.4525839503648521
+	// 0.7681658093567769
+	// 0.2749747607128561
+	// 0.7895989827308855
+	// 0.8185716761544438
+	// 0.2690455236771939
+	// 0.2802704611946456
 }
