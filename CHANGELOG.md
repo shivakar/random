@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Normal random variable and variate generator
 - LogNormal random variable and variate generator
 - Cauchy random variable and variate generator
+- CodeClimate Integration
 
 ### Changed
 - Fixed typos
