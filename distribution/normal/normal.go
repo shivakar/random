@@ -14,8 +14,7 @@ var (
 )
 
 // Normal is a continuous random variable for a normal probability
-// distribution parameterized by minimum and maximum values, namely,
-// a and b, respectively.
+// distribution parameterized by mean and standard deviation.
 type Normal struct {
 	// rng is source/engine for normal uint64 and float64 numbers
 	rng prng.Engine

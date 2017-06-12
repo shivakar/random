@@ -18,7 +18,7 @@
     - [ ] Fisher F
     - [ ] Gamma
     - [ ] Geometric
-    - [ ] LogNormal
+    - [x] LogNormal
     - [ ] Logistic
     - [ ] Negative Binomial
     - [x] Normal

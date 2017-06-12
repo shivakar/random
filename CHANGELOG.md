@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 - Distribution Goodness-of-Fit tests, namely KS test and AD test
 - Uniform random variable and variate generator
 - Normal random variable and variate generator
+- LogNormal random variable and variate generator
+
+### Changed
+- Fixed typos
 
 ## [0.2.0] - 2017-06-10
 ### Added

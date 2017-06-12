@@ -235,9 +235,9 @@ func Benchmark_Normal_Xorshift1024Star_Float64(b *testing.B) {
 }
 
 // Example - Normal Distribution
-func ExampleNormalDistribution() {
+func ExampleNormal() {
 	// Example based on
-	// http://www.cplusplus.com/reference/random/normal_distribution/~
+	// http://www.cplusplus.com/reference/random/normal_distribution/
 	r := xorshift128plus.New(20170611)
 	d := normal.New(r, 5.0, 2.0)
 

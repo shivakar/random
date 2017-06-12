@@ -1,6 +1,6 @@
-// Package uniform implements a uniform continuous random variable
+// Package normal implements a normal continuous random variable
 //
-// Uniform distribution is a probability distribution parameterized by
+// normal distribution is a probability distribution parameterized by
 // two parameters, mean (also called location) and standard deviation
 // (also called scale)
 //

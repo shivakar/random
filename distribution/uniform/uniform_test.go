@@ -213,7 +213,7 @@ func Benchmark_Uniform_Xorshift1024Star_Float64(b *testing.B) {
 }
 
 // Example - Uniform Distribution
-func ExampleUniformDistribution() {
+func ExampleUniform() {
 	// Example based on
 	// http://www.cplusplus.com/reference/random/normal_distribution/
 	r := xorshift128plus.New(20170611)
@@ -230,7 +230,7 @@ func ExampleUniformDistribution() {
 		}
 	}
 
-	fmt.Println("Uniform Distribution: a=3.0, sigma=7.0")
+	fmt.Println("Uniform Distribution: a=3.0, b=7.0")
 
 	for i := 0; i < 10; i++ {
 		v := p[i] * nstars / nrolls
@@ -240,7 +240,7 @@ func ExampleUniformDistribution() {
 	}
 
 	// Output:
-	// Uniform Distribution: a=3.0, sigma=7.0
+	// Uniform Distribution: a=3.0, b=7.0
 	//  0- 1:  (0)
 	//  1- 2:  (0)
 	//  2- 3:  (0)
