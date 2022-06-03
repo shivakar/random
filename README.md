@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/shivakar/random.svg?branch=master)](https://travis-ci.org/shivakar/random) [![Coverage Status](https://coveralls.io/repos/github/shivakar/random/badge.svg?branch=master)](https://coveralls.io/github/shivakar/random?branch=master) [![Code Climate](https://codeclimate.com/github/shivakar/random/badges/gpa.svg)](https://codeclimate.com/github/shivakar/random) [![GoDoc](https://godoc.org/github.com/shivakar/random?status.svg)](https://godoc.org/github.com/shivakar/random)
+[![Build Status](https://github.com/shivakar/random/actions/workflows/main.yml?branch=main)](https://github.com/shivakar/random/actions/workflows/main.yml/badge.svg?branch=main) [![Coverage Status](https://coveralls.io/repos/github/shivakar/random/badge.svg?branch=main)](https://coveralls.io/github/shivakar/random?branch=main) [![Code Climate](https://codeclimate.com/github/shivakar/random/badges/gpa.svg)](https://codeclimate.com/github/shivakar/random) [![GoDoc](https://pkg.go.dev/badge/github.com/shivakar/random.svg)](https://pkg.go.dev/github.com/shivakar/random)
 
 # random
 Package random implements pseudo-random number generators and random variate generators.
@@ -76,9 +76,6 @@ make uniform-coverage
 Output:
 
 <a href="assets/uniform-coverage.png"><img src="assets/uniform-coverage.png" width="800"></a>
-
-
-
 
 Test and bench output for posterity:
 
