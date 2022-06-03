@@ -8,29 +8,29 @@ DISTRIBUTIONS_COVERAGE := $(addsuffix -coverage, $(DISTRIBUTIONS))
 default: test
 
 test:
-	go test -cover -v ./...
+	go test -race -cover -covermode=atomic -v ./...
 
 $(PRNGS):
-	go test -cover -v ./prng/$@
+	go test -race -cover -covermode=atomic -v ./prng/$@
 
 $(PRNGS_LONG):
-	go test -cover -v ./prng/$(patsubst %-long,%,$@) -long -timeout 1h
+	go test -race -cover -covermode=atomic -v ./prng/$(patsubst %-long,%,$@) -long -timeout 1h
 
 
 $(PRNGS_COVERAGE):
 	$(eval package := $(patsubst %-coverage,%,$@))
-	go test -coverprofile=$(package).out -v ./prng/$(package)
+	go test -race -covermode=atomic -coverprofile=$(package).out -v ./prng/$(package)
 	go tool cover -html=$(package).out -o $(package).html
-	elinks $(package).html
+	open $(package).html
 
 $(DISTRIBUTIONS):
-	go test -cover -v ./distribution/$@
+	go test -race -cover -covermode=atomic -v ./distribution/$@
 
 $(DISTRIBUTIONS_COVERAGE):
 	$(eval package := $(patsubst %-coverage,%,$@))
-	go test -coverprofile=$(package).out -v ./distribution/$(package)
+	go test -race -covermode=atomic -coverprofile=$(package).out -v ./distribution/$(package)
 	go tool cover -html=$(package).out -o $(package).html
-	elinks $(package).html
+	open $(package).html
 
 clean:
 	rm *.out *.html
